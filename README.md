@@ -137,7 +137,7 @@ Below are examples of key API calls (tested with Postman). Replace placeholders 
 * **Get Doctor by ID (`GET /api/v1/doctors/{doctor_id}`)**
     * Response: Single doctor object with details and reviews.
 
-    ![Get Doctor by ID Screenshot](screenshots/06_get_doctor_by_id.png)
+  
 
 #### Reviews
 
@@ -150,8 +150,7 @@ Below are examples of key API calls (tested with Postman). Replace placeholders 
 
     *(After reviews are added, calling `GET /api/v1/doctors/` or `GET /api/v1/doctors/{doctor_id}` will show updated average ratings and review lists.)*
 
-    ![Doctor Profile with Review Screenshot](screenshots/08_doctor_with_review.png)
-
+    
 #### Recommendations
 
 * **Create Recommendation (`POST /api/v1/doctors/{doctor_id}/recommendations`)**
