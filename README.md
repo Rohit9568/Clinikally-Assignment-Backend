@@ -50,7 +50,7 @@ A backend API for a web application enabling customers to rate and review dermat
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Rohit9568/Clinikally-Assignment-Backend.git](https://github.com/Rohit9568/Clinikally-Assignment-Backend.git)
+    git clone (https://github.com/Rohit9568/Clinikally-Assignment-Backend.git)
     cd Clinikally-Assignment-Backend
     ```
 
@@ -99,13 +99,13 @@ Below are examples of key API calls (tested with Postman). Replace placeholders 
 #### Authentication
 
 * **Register User (`POST /api/v1/users/`)**
-    * Request Body: `{ "username": "test_user_alpha", "password": "securepassword123" }`
-    * Response: `{ "username": "test_user_alpha", "id": 1 }`
+    * Request Body: `{ "username": "Rohit Sharma", "password": "securepassword123" }`
+    * Response: `{ "username": "Rohit Sharma", "id": 2 }`
 
     ![User Registration Screenshot](screenshots/01_user_registration.png)
 
 * **Login (`POST /api/v1/auth/token`)**
-    * Request (form-data): `username: test_user_alpha`, `password: securepassword123`
+    * Request (form-data): `username: Rohit Sharma`, `password: securepassword123`
     * Response: `{ "access_token": "your.jwt.token", "token_type": "bearer" }`
 
     ![User Login Screenshot](screenshots/02_user_login.png)
@@ -141,7 +141,7 @@ Below are examples of key API calls (tested with Postman). Replace placeholders 
 
 #### Reviews
 
-* **Create Review (`POST /api/v1/doctors/{doctor_id}/reviews`)**
+* **Create Review (`POST /api/v1/doctors/1/reviews`)**
     * Headers: `Authorization: Bearer {{TOKEN}}`
     * Request Body: `{ "rating": 4, "comment": "Good experience with Dr. Omega." }`
     * Response: Review object.
